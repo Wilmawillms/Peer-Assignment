@@ -1,0 +1,23 @@
+# R program in finding an inverse matrix
+  
+# Before finding the inverse matrix we need to establish the matrix itself 
+# we need to make 3 vectors to create a 3 by 3 matrix
+# using combine method.
+a1 <- c(2, -3, 1)
+a2 <- c(2, 0, -1)
+a3 <- c(1, 4, 5)
+  
+# Now that we have the three vectors we need to combine them so that r recognize it as matrix 
+# I will use rbind()
+# This function is known asrow-wise binding.
+A <- rbind(a1, a2, a3)
+  
+#  I will print the original matrix to solve
+print(A)
+  
+# By closing this with a print function then this will calculate the matrix
+# In this segment this will be the function on performing inverse matrix
+W1 <- solve(A)
+  
+# print the inverse of the matrix.
+print(W1)
